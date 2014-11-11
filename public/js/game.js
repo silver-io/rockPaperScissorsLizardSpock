@@ -16,3 +16,7 @@ Game.prototype.winner = function() {
       if(this.beatenBy[this.player2.pick][this.player1.pick] != undefined) return this.player2;
       if(this._isSamePick) return null;
 };
+
+Game.prototype._isSamePick = function() {
+  this.player1.pick === this.player2.pick
+};

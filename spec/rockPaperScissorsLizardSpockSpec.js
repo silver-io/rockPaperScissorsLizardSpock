@@ -181,4 +181,27 @@ describe("Rock-Paper-Scissors-Lizard-Spock", function(){
       });
     });
   });
+
+  describe('draws', function() {
+
+    describe('same picks', function() {
+
+      it('No winners', function() {
+
+        var drawResults = ['rock', 'paper', 'scissors'].map(function(x) {
+          player1.picks(x);
+          player2.picks(x);
+          return game.winner();
+        });
+
+        expect(drawResults).toEqual([null, null, null]);
+
+      });
+
+    });
+
+  });
+
+
+
 });
