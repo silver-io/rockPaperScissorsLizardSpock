@@ -147,8 +147,38 @@ describe("Rock-Paper-Scissors-Lizard-Spock", function(){
       });
     });
 
+    describe('Spock', function(){
 
+      it('shoud beat rock', function(){
+
+        player1.picks('Spock');
+        player2.picks('rock');
+        expect(game.winner()).toBe(player1);
+      });
+
+       it('should beat scissors', function() {
+
+        player1.picks('Spock');
+        player2.picks('scissors');
+        expect(game.winner()).toBe(player1);
+
+      });
+
+      it('should lose to lizard', function() {
+
+        player1.picks('Spock');
+        player2.picks('lizard');
+        expect(game.winner()).toBe(player2);
+
+      });
+
+      it('should lose to paper', function() {
+
+        player1.picks('Spock');
+        player2.picks('paper');
+        expect(game.winner()).toBe(player2);
+
+      });
+    });
   });
-
-
 });
