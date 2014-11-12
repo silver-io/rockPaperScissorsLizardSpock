@@ -5,10 +5,10 @@ function Game(player1, player2) {
 
 Game.prototype.beatenBy = {
       rock: { scissors: "crushes", lizard: "crushes" },
-      paper: { rock: "covers", Spock: "disproves" },
+      paper: { rock: "covers", spock: "disproves" },
       scissors: { paper: "cuts", lizard: "decapitates" },
       lizard: { Spock: "poisons", paper: "eats" },
-      Spock: { rock: "vapourises" , scissors: "smashes" },
+      spock: { rock: "vapourises" , scissors: "smashes" },
 };
 
 Game.prototype.winner = function() {

@@ -1,7 +1,7 @@
 var player1 = new Player("Computer");
 var player2 = new Player("Player");
 var game = new Game(player1, player2);
-var choices = ["rock", "paper", "scissors", "lizard", "Spock"];
+var choices = ["rock", "paper", "scissors", "lizard", "spock"];
 
 $(document).ready(function(){
       $('img').on('click', function(){
