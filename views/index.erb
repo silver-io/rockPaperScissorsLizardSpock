@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Possibly the greatest game ever</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+  <section ="game-play">
+    <h1>Rock Paper Scissors Lizard Spock.</h1>
+
+    <form id="name-input">
+      <input type="text" id="name" placeholder="Your name is..." onfocus="this.placeholder=''" onblur="this.placeholder='Your name is...'">
+    </form>
+
+    <section>
+      <ul><img src="img/rock.png" data-pick="rock"></ul>
+      <ul><img src="img/paper.png" data-pick="paper"></ul>
+      <ul><img src="img/scissors.png" data-pick="scissors"></ul>
+      <ul><img src="img/lizard.png" data-pick="lizard"></ul>
+      <ul><img src="img/spock.png" data-pick="Spock"></ul>
+    </section>
+
+    <ol id="victory-messages"></ol>
+  </section>
+
+  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/game.js"></script>
+  <script type="text/javascript" src="js/player.js"></script>
+  <script type="text/javascript" src="js/interface.js"></script>
+
+</body>
+</html>
