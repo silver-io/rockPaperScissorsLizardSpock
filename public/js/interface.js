@@ -10,8 +10,9 @@ $(document).ready(function(){
            $("<li>" + game.victoryNotification() + "</li>").prependTo('#victory-messages').slideDown();
            $("#victory-messages li:gt(2)").fadeOut(1000, function(){
                   $(this).remove();
-
           });
       });
+
+
 
 });

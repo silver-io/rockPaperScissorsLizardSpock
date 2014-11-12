@@ -1,3 +1,48 @@
 body {
-  background: #35353f;
+  background: #fff;
 }
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 5em;
+}
+
+.game-play {
+  max-width: 700px;
+  margin: 0px auto 70px;
+}
+
+img {
+  width: 100%;
+  padding: 0;
+  margin-top: 70px;
+}
+
+img:hover {
+  width: 105%;
+  margin-top: 0;
+}
+
+.img {
+  display: inline-block;
+  text-align: center;
+}
+
+.img-container {
+  display: block;
+  text-align: center;
+  margin: 20px auto 35px;
+  padding: 0;
+}
+
+#victory-messages {
+  text-align: center;
+  list-style: none;
+  font-size: 2em;
+  line-height: 1.35em;
+}
+
+  #victory-messages li {
+    display:none;
+  }
