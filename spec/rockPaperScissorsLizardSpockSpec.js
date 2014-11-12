@@ -2,8 +2,8 @@ describe("Rock-Paper-Scissors-Lizard-Spock", function(){
   var player1, player2, game;
 
   beforeEach(function(){
-    player1 = new Player;
-    player2 = new Player;
+    player1 = new Player('Bob');
+    player2 = new Player('Juan');
     game = new Game(player1, player2)
   })
 
@@ -202,6 +202,15 @@ describe("Rock-Paper-Scissors-Lizard-Spock", function(){
 
   });
 
+  describe('victory notifications', function() {
+      it('returns a notification when scissors beats paper', function(){
+          player1.picks('scissors');
+          player2.picks('paper');
+          expect(game.victoryNotification()).toBe("Bob's scissors cuts Juan's paper")
+      });
 
+
+
+  });
 
 });

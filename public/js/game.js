@@ -17,6 +17,21 @@ Game.prototype.winner = function() {
       if(this.samePick) return null;
 };
 
-Game.prototype.samePick = function() {
-  this.player1.pick === this.player2.pick
+Game.prototype.loser = function(firstArgument) {
+      if(this.winner() === null) return null;
+      return this.winner() === this.player1 ? this.player2 : this.player;
 };
+
+Game.prototype.samePick = function() {
+      this.player1.pick === this.player2.pick
+};
+
+Game.prototype.victoryVerb = function(winningPick, losingPick) {
+      return this.beatenBy[winningPick][losingPick]
+};
+
+Game.prototype.victoryNotification = function(firstArgumen) {
+      if(this.winner() === null) return "It was a draw"
+      if(this.winner() !== null) return this.winner().name + "'s " + this.winner().pick + " " + this.victoryVerb(this.winner().pick,this.loser().pick) +" " + this.loser().name + "'s " + this.loser().pick
+};
+
