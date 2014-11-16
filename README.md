@@ -3,7 +3,7 @@
 This was our week 7 challenge for Makers Academy.
 The app is live on Heroku and can be viewed here: https://rpsls-silverio.herokuapp.com/
 
-Technologies used:
+### Technologies used:
 - JavaScript
 - jQuery
 - HTML5
